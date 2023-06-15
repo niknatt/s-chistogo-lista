@@ -52,17 +52,21 @@ blockquote {
   gap: 12px;
 }
 
-.header__menu-item {
-  min-height: 20px;
-}
-
 .header__menu-link {
   color: inherit;
   text-underline-position: under;
 }
 
+.header__menu-link:hover {
+  opacity: 0.5;
+}
+
 .header__menu-link_active {
   text-decoration: none;
+}
+
+.header__logo-image {
+  width: 78.45px;
 }
 
 .cover {
@@ -71,12 +75,14 @@ blockquote {
   background-repeat: no-repeat;
   background-position: left 20px bottom 30px;
   background-size: 95% auto;
+  min-height: 258px;
 }
 .cover__title {
   font-family: "EB Garamond", serif;
   font-size: 72px;
   line-height: 1;
   font-weight: 400;
+  color: #ffffff;
 }
 
 .accent-span {
@@ -187,22 +193,26 @@ blockquote {
   padding: 20px;
 }
 
+.card_theme_dark {
+  background-color: #343434;
+}
+
+.card_theme_bright {
+  background-color: #fee42a;
+  color: #131313;
+}
+
 .card__author {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
+.card__author-photo {
+  width: 100px;
+}
 .card__author-name {
   font-weight: 700;
-}
-
-.card__text {
-  hyphens: manual;
-}
-
-.card__text-name {
-  font-style: normal;
 }
 
 .card__content {
@@ -216,12 +226,9 @@ blockquote {
   font-size: 22px;
   font-weight: 500;
 }
-.card_theme_dark {
-  background-color: #343434;
-}
-.card_theme_bright {
-  background-color: #fee42a;
-  color: #131313;
+
+.card__text {
+  hyphens: manual;
 }
 
 .footer {
@@ -244,4 +251,8 @@ blockquote {
   color: inherit;
   font-size: 14px;
   line-height: 1.25;
+}
+
+.footer__link:hover {
+  opacity: 0.5;
 }
